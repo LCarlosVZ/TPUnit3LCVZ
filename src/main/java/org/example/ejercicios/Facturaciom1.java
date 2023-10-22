@@ -1,5 +1,6 @@
 package org.example.ejercicios;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /*
@@ -15,6 +16,10 @@ public class Facturaciom1 {
 	}
 
 	public static void main(String[] args) {
+
+
+
+
 		DatosFactura factura1 = new DatosFactura("Maria Sanabria", "Julio 1, 1999", List.of(4500D, 5000D, 2500D));
 		DatosFactura factura2 = new DatosFactura("Juan Perez", "Agosto 15, 2000", List.of(3500D, 6000D, 2800D));
 
@@ -34,6 +39,13 @@ public class Facturaciom1 {
 		System.out.println("Factura 2" );
 		System.out.println("Cliente: " + factura2.nombreCliente());
 		System.out.println("Total: " + totalValorFact2);
+	}
+
+	public ArrayList<DatosFactura> retornarDatosDeFacturas(){
+		ArrayList<DatosFactura> datosParaFactura = new ArrayList<>();
+		datosParaFactura.add(new DatosFactura("Maria Sanabria", "Julio 1, 1999", List.of(4500D, 5000D, 2500D)));
+		datosParaFactura.add(new DatosFactura("Juan Perez", "Agosto 15, 2000", List.of(3500D, 6000D, 2800D)));
+		return datosParaFactura;
 	}
 
 }
