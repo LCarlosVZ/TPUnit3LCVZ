@@ -37,7 +37,7 @@ public class Facturaciom1 {
             for (Double precio : mostrarDatos.get(i).precioProducto) {
                 totalValorFactura += precio;
             }
-            System.out.println("Factura 2");
+            System.out.println("Factura "+i);
             System.out.println("Cliente: " + mostrarDatos.get(i).nombreCliente());
             System.out.println("Total: " + totalValorFactura);
         }
